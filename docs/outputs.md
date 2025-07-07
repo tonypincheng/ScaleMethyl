@@ -21,11 +21,12 @@ Here is a description of all of the output files that are saved outside the work
 | `fastq` | | Fastq generation, QC and processing |
 |         | `fastqc/*.html` | [fastqc](https://github.com/s-andrews/FastQC) report for each fastq file in the sequencing library |
 |         | `trim/<sample>.<tgmt_well>/<sample>.<tgmt_well>.trim_stats.json` | JSON containing stats from trimming |
-| `matrix_generation` | | Files needed for matrix generation step (Required for --startPostAlignment option) |
+| `matrix_generation` | | Files needed for matrix generation step (Required for --startPostExtraction  option) |
 | `metrics_for_reporting` |  | By-sample csv report information. (Required for --reportingOnly option) |
 | `report` | | QC reports and statistics |
 | `report/sample_reports/<sample>` | `<sample>.report.html` | An interactive standalone HTML report including key metrics/figures for each sample |
 |                  | `csv/<sample>.*.csv` | Sample metrics in csv format |
+|                  | `csv/<sample>.report_clusters.tsv` | cluster IDs for each passing barcode for umap in sample report
 | `report/library_report/<library>` | `library.<libName>.report.html` | Barcode summary and demultiplexing statistics for the whole library (potentially multiple samples) |
 |                  | `csv/<libName>.combinedPassingCellStats.csv` | Key metrics for passing cells for the whole library |
 | `samples` | | Single-cell methylation outputs |

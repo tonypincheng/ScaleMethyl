@@ -1,15 +1,16 @@
+# Version 1.3
+## 1.3.0
+* Provides updated Amethyst output for v1.0.0, update your Amethyst to 1.0.0 to use final output.
+* Adds support for BWA-meth/parabricks aligner and sets BWA-meth as new default, providing improved runtime performance and filtering spurious low-coverage methylation sites. 
+* Numerous reporting improvements, including UMAP generation
 # Version 1.2
-## 1.2.4
-* Fix to .cov file output. CG and CH files were being generated on top of eachother.
-    - Introduced in v1.2.0 and affected runs with --covOut True
-    - Can use --startPostAlignment True and --previousOutDir options to fix without re-running the entire workflow
-## 1.2.3
+## 1.2.3 
 * Fix to Amethyst output (CG and CH context was being output switched) 
     - Introduced in v1.2.0 and affecting runs with --amethystOut True
-    - Can use --startPostAlignment True and --previousOutDir options to fix without re-running the entire workflow
+    - Can use --startPostExtraction  True and --previousOutDir options to fix without re-running the entire workflow
 ## 1.2.2
 * Fix to sample merging (especially when calculating CH contexts)
-* Fix to sample reports
+* Using local tempdir to avoid permission errors in reporting
 ## 1.2.1
 * Fix remote URL in sample and library QC reports (HTML)
 ## 1.2.0

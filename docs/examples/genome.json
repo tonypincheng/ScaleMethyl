@@ -2,11 +2,14 @@
     "name": "hg38",
     "speciesName": "Homo sapiens",
     "bsbolt_index": "s3://scale.pub/testData/methylation/reference/bsbolt",
+    "bwa_index": "s3://scale.pub/testData/methylation/reference/bwa_meth",
+    "parabricks_index": "s3://scale.pub/testData/methylation/reference/parabricks",
+    "ref_fasta": "hg38.fa",
     "genomeWindowBlackList": "",
     "chrom.size": "",
     "genomeTiles": "",
     "genomeTilesCh": "",
-    "bsbolt_chrs" : "s3://scale.pub/testData/methylation/reference/contigs.hg38.tsv",
+    "filter_chrs" : "s3://scale.pub/testData/methylation/reference/contigs.hg38.tsv",
     "tssWin": "s3://scale.pub/testData/methylation/reference/Homo_sapiens.GRCh38.103.tss100UpDn.uniq.bed",
     "backgroundWin": "s3://scale.pub/testData/methylation/reference/Homo_sapiens.GRCh38.103.backgroundTssUpstream1200to1000.uniq.bed"
 }
