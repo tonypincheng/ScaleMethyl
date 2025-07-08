@@ -46,7 +46,7 @@ aws s3 sync s3://scale.pub/testData/methylation/reference/ reference --no-sign-r
 aws s3 sync s3://scale.pub/testData/methylation/downsampled_pbmcs_v1.1/ fastqs --no-sign-request
 ```
 and then run with
-`nextflow run /PATH/TO/ScaleMethyl/ -profile PROFILE -params-file /PATH/TO/ScaleMethyl/docs/examples/runParams.yml --genome reference/genome.json --fastqDir fastqs --outDir ScaleMethyl.out
+`nextflow run /PATH/TO/ScaleMethyl/ -profile PROFILE -params-file /PATH/TO/ScaleMethyl/docs/examples/runParams.yml --genome reference/genome.json --fastqDir fastqs --outDir ScaleMethyl.out`
 
 Note that this test run is merely a quick and easy way to verify that the pipeline executes properly and does not represent a complete dataset.
 
