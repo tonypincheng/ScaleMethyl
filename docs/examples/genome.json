@@ -8,7 +8,7 @@
     "genomeWindowBlackList": "",
     "chrom.size": "",
     "genomeTiles": "",
-    "genomeTilesCh": "",
+    "genomeTilesCH": "",
     "filter_chrs" : "s3://scale.pub/testData/methylation/reference/contigs.hg38.tsv",
     "tssWin": "s3://scale.pub/testData/methylation/reference/Homo_sapiens.GRCh38.103.tss100UpDn.uniq.bed",
     "backgroundWin": "s3://scale.pub/testData/methylation/reference/Homo_sapiens.GRCh38.103.backgroundTssUpstream1200to1000.uniq.bed"

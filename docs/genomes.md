@@ -11,7 +11,7 @@ bwa_index | Path to the bwa-meth (bwa-mem2) index directory | Required (one inde
 parabricks_index | Path to the parabricks (bwa-meth/bwa-mem) index directory | Required (one index required) | `/PATH/TO/bwa-meth/bwa-mem.ref`
 ref_fasta | Name of fasta file within bwa-meth/parabricks index | Required (with bwa_index or parabricks_index) | `hg38.fa`
 genomeTiles | Path to binned genome sorted bed file for CG matrix | Optional | `/PATH/TO/50kbp.bed` 
-genomeTilesCh | Path to binned genome sorted bed file for CH matrix | Optional | `/PATH/TO/100kbp.bed` 
+genomeTilesCH | Path to binned genome sorted bed file for CH matrix | Optional | `/PATH/TO/100kbp.bed` 
 filter_chrs | Path to tsv chromosome labels (mito, filter) to filter from deduplicated BAM | Required | `/PATH/TO/filter_chrs.tsv` 
 tssWin | Path to bed sorted 200nt windows centered at TSS | Required unless runTssEnrich: false | `/PATH/TO/tss.bed` 
 backgroundWin | Path to bed sorted 200nt windows centered at TSS -1kb upstream | Required unless runTssEnrich: false | `/PATH/TO/background.bed` 
@@ -40,9 +40,9 @@ bsbolt Index -G {fasta reference} -DB {database output}
 ```
 
 ## Annotation
-All genomic non-overlapping bins in the provided _genomeTiles_ and _genomeTilesCh_ bed files are used as features for CG and CH methylation matrix generation. 
+All genomic non-overlapping bins in the provided _genomeTiles_ and _genomeTilesCH_ bed files are used as features for CG and CH methylation matrix generation. 
 * To use bed files with different sized bins (default 50kb) for CG matrix, pass to _genomeTiles_ in the `genome.json`. 
-* To pass a different size bins (default 250kb) for CH matrix, pass to _genomeTilesCh_ in the `genome.json`.
+* To pass a different size bins (default 250kb) for CH matrix, pass to _genomeTilesCH_ in the `genome.json`.
 
 ## Pre-built genomes
 Pre-built reference genomes are available for download:

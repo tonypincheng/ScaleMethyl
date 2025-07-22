@@ -41,7 +41,7 @@ Here is a description of all of the output files that are saved outside the work
 ### Genome-bin Methylation Matrix
 Rows are the genomic bins, and columns are the cellular barcode, see `features.tsv` and `barcodes.tsv` respectively.
 
-Custom binned bed files for the CG and CH matrix generation can be passed using the `genomeTiles` and `genomeTilesCh` options in the [genomes.json](genomes.md); only included with `--windowMatrixOut true`. CH context is also only calculated if --calculateCH is true.
+Custom binned bed files for the CG and CH matrix generation can be passed using the `genomeTiles` and `genomeTilesCH` options in the [genomes.json](genomes.md); only included with `--windowMatrixOut true`. CH context is also only calculated if --calculateCH is true.
 
 `cellGlobalMet` = Global methylation rate of the cell (methylated / total covered )
 

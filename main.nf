@@ -72,7 +72,7 @@ def updateGenomeBedFileCG(genome, bedFilePath) {
 }
 
 def updateGenomeBedFileCH(genome, bedFilePath) {
-	genome.genomeTilesCh = bedFilePath
+	genome.genomeTilesCH = bedFilePath
 	return genome
 }
 

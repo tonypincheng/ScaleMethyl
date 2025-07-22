@@ -195,7 +195,7 @@ main:
             .set { chPass }
 
         if (params.windowMatrixOut) {
-            MtxCH(genome.genomeTilesCh, chPass)
+            MtxCH(genome.genomeTilesCH, chPass)
             MtxCH.out.mtx
                 .dump(tag: 'mtxCH')
                 // combine the outputs per sample

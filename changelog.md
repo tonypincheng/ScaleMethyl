@@ -1,4 +1,6 @@
 # Version 1.3
+## 1.3.1
+* Fix to using custom windows for CH contexts
 ## 1.3.0
 * Provides updated Amethyst output for v1.0.0, update your Amethyst to 1.0.0 to use final output.
 * Adds support for BWA-meth/parabricks aligner and sets BWA-meth as new default, providing improved runtime performance and filtering spurious low-coverage methylation sites. 
@@ -45,7 +47,7 @@
 
 # Version 1.0.1
 * Add TSS enrichment to sample QC reports
-    - See `genomeTiles` and `genomeTilesCh` [genomes.md ](docs/genomes.md)
+    - See `genomeTiles` and `genomeTilesCH` [genomes.md ](docs/genomes.md)
 * Add options for filtering passing cells by a percent uniquely mapped reads
     - See `--minUniqTotal` and `--maxUniqTotal`
 * Add options to turn off CG or CH matrix generation 
